@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+.input-container {
+    @apply flex flex-col justify-center items-start px-6 py-5 mt-5 text-center rounded-3xl border border-solid border-black border-opacity-20 leading-[152%] max-md:px-5 max-md:max-w-full;
+  }
+  
+  .input-wrapper {
+    @apply flex gap-5 justify-between w-full;
+  }
+  
+  .button-container {
+    @apply  justify-center items-center px-16 py-7 mt-8 text-2xl font-medium text-white bg-purple-900 rounded-3xl max-md:px-5 max-md:max-w-full;
+  }
+  
+  .text-center-value {
+    @apply self-center mt-6 leading-9 text-center text-purple-900;
+  }
+  
+  .link-container {
+    @apply flex gap-5 justify-between self-center py-1.5 mt-8 max-w-full text-lg font-medium leading-5 text-purple-900 w-[271px];
+  }
+   
+  /* Add this to your CSS file */
+  .icon-gradient {
+    fill: url(#gradient);
+  }
+  
+  .icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(to bottom, #6b46c1, #d69e2e); /* Purple to Yellow */
+  }
+
+
+  
